@@ -1,46 +1,28 @@
 ﻿using System;
 
-namespace ProgrammingAssignment1
+namespace Exercise4
 {
-    // IMPORTANT: Only add code in the section
-    // indicated below. The code I've provided
-    // makes your solution work with the 
-    // automated grader on Coursera
-
     /// <summary>
-    /// Programming Assignment 1
+    /// Exercise 4 Solution
     /// </summary>
     internal class Program
     {
         /// <summary>
-        /// Programming Assignment 1
+        /// Calculates altitude change between two locations
         /// </summary>
         /// <param name="args">command-line args</param>
         static void Main(string[] args)
         {
-            // loop while there's more input
-            string input = Console.ReadLine();
-            while (input[0] != 'q')
-            {
-                // Add your code between this comment
-                // and the comment below. You can of
-                // course add more space between the
-                // comments as needed
-                Console.WriteLine("H");
-                Console.WriteLine("He"); 
-                Console.WriteLine("Li");
-                Console.WriteLine("Be");    
-                Console.WriteLine("B"); 
-                Console.WriteLine("C"); 
-                Console.WriteLine("N"); 
-                Console.WriteLine("O"); 
-                Console.WriteLine("F"); 
-                Console.WriteLine("Ne");    
+            // get locations
+            Console.Write("Enter altitude at first location:  ");
+            int firstAltitude = int.Parse(Console.ReadLine());
+            Console.Write("Enter altitude at second location: ");
+            int secondAltitude = int.Parse(Console.ReadLine());
 
-                // Don't add or modify any code below
-                // this comment
-                input = Console.ReadLine();
-            }
+            // calculate and print altitude change
+            int altitudeChange = secondAltitude - firstAltitude;
+            Console.WriteLine();
+            Console.WriteLine("Altitude change: " + altitudeChange);
         }
     }
 }
