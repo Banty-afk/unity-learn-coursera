@@ -1,0 +1,21 @@
+using System;
+using System.Runtime.Intrinsics.X86;
+namespace Exercise6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter an angle in degree:");
+            float angle = float.Parse(Console.ReadLine());
+          
+            float radians = angle * (float)Math.PI / 180;   
+
+            float cosine = (float)Math.Cos(radians);
+            float sin = (float)Math.Sin(radians);   
+
+            Console.WriteLine("Cosine: " + cosine);
+            Console.WriteLine("Sine: " + sin);  
+        }
+        }
+}
