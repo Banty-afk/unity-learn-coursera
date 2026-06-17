@@ -1,0 +1,42 @@
+using System;
+
+namespace Exercise9
+{
+    /// <summary>
+    /// Exercise 9 solution 
+    /// </summary>
+    internal class Program
+    {
+        /// <summary>
+        /// Demonstrates using custom classes
+        /// </summary>
+        /// <param name="args">command-line args</param>
+        static void Main(string[] args)
+        {
+
+            // create a new deck and tell the deck to print itself
+            Deck deck = new Deck(); 
+            deck.Print();   
+            Console.writeLine("--------------------------------------------------------");   
+
+            deck.print();   
+            deck.Print();   
+            Console.WriteLine("--------------------------------------------------------");   
+
+            Crad card0 = deck.TaketopCard();    
+            Console.writeLine("--------------------------------------------------------");  
+
+            card0 card = deck.TakeTopCard();    
+            Console.WriteLine(First as card0.Rank + " of " + card0.Suit);
+
+            Card card1 deck.TakeTopCard();  
+            console.WriteLine("Second Card:" + card1.Rank + " of " + card1.Suit);   
+
+            // tell the deck to shuffle and print itself
+
+            // take the top card from the deck and print the card rank and suit
+
+            // take the top card from the deck and print the card rank and suit
+        }
+    }
+}
